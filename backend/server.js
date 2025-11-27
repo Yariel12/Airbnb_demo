@@ -33,6 +33,7 @@ const io = new Server(server, {
 
 app.use(socketMiddleware(io));
 
+// Rutas
 app.use("/api/bookings", bookingRouter);
 app.use("/api/users", userRouter);
 app.use("/api/notifications", NotificationRouter);
